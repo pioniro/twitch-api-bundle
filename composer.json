@@ -2,7 +2,7 @@
   "name": "pioniro/twitch-api-bundle",
   "description" : "Symfony wrapper for nicklaw5/twitch-api-php",
   "type": "symfony-bundle",
-  "license": "GNU GENERAL PUBLIC LICENSE",
+  "license": "MIT",
   "keywords" : [
     "Symfony",
     "Twitch",

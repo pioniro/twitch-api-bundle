@@ -1,0 +1,9 @@
+services:
+    Pioniro\TwitchApiBundle\Service\TwitchApi:
+        arguments:
+            - '%twitch_api.client.id%'
+            - '%twitch_api.client.secret%'
+            - '%twitch_api.client.redirect_uri%'
+            - '%twitch_api.client.api_version%'
+            - '%twitch_api.client.scope%'
+            - '@jms_serializer'

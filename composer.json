@@ -1,0 +1,42 @@
+{
+  "name": "pioniro/twitch-api-bundle",
+  "description" : "Symfony wrapper for nicklaw5/twitch-api-php",
+  "type": "symfony-bundle",
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "keywords" : [
+    "Symfony",
+    "Twitch",
+    "PHP",
+    "Twitch API",
+    "API"
+  ],
+  "authors" : [{
+    "name" : "Alexey Fedorov",
+    "email" : "pioniro@yandex.ru"
+  }],
+  "autoload": {
+    "psr-4": {
+      "Pioniro\\TwitchApiBundle\\": "src/"
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pioniro\\TwitchApiBundle\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^5.5.9|^7.0",
+    "symfony/symfony": ">=3.2",
+    "nicklaw5/twitch-api-php": ">=1.2",
+    "jms/serializer-bundle": "^2.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}

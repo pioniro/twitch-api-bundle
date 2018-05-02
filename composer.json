@@ -29,7 +29,7 @@
   },
   "require": {
     "php": "^5.5.9|^7.0",
-    "symfony/symfony": "^3.2|^4.0",
+    "symfony/framework-bundle": "^3.2|^4.0",
     "nicklaw5/twitch-api-php": "^1.2",
     "jms/serializer-bundle": "^2.3"
   },

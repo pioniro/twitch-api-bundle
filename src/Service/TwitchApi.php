@@ -24,7 +24,8 @@ class TwitchApi extends \TwitchApi\TwitchApi
      * @param SerializerInterface $serializer
      * @throws \TwitchApi\Exceptions\ClientIdRequiredException
      */
-    public function __construct($clientId = null, $secret = null, $uri = null, $version = null, $scope = null, SerializerInterface $serializer)
+    public function __construct($clientId = null, $secret = null, $uri = null, $version = null, $scope = null,
+                                SerializerInterface $serializer)
     {
         $this->serializer = $serializer;
         parent::__construct([
@@ -65,14 +66,17 @@ class TwitchApi extends \TwitchApi\TwitchApi
      * @throws \TwitchApi\Exceptions\InvalidTypeException
      * @throws \TwitchApi\Exceptions\UnsupportedOptionException
      */
-    public function getChannelVideos($channelIdentifier, $limit = 10, $offset = 0, $broadcastType = 'highlight', $language = null, $sort = 'time')
+    public function getChannelVideos($channelIdentifier, $limit = 10, $offset = 0, $broadcastType = 'highlight',
+                                     $language = null, $sort = 'time')
     {
         $response = parent::getChannelVideos($channelIdentifier, $limit, $offset, $broadcastType, $language, $sort);
         if(is_array($response)) {
             // todo! fix this hack. fucking twitch api!
             foreach($response['videos'] as &$video) {
-                $video['channel']['created_at'] = \DateTime::createFromFormat('Y-m-d\TH:i:s.uP', $video['channel']['created_at'])->format('Y-m-d\TH:i:sP');
-                $video['channel']['updated_at'] = \DateTime::createFromFormat('Y-m-d\TH:i:s.uP', $video['channel']['updated_at'])->format('Y-m-d\TH:i:sP');
+                $video['channel']['created_at'] = \DateTime::createFromFormat('Y-m-d\TH:i:s.uP',
+                    $video['channel']['created_at'])->format('Y-m-d\TH:i:sP');
+                $video['channel']['updated_at'] = \DateTime::createFromFormat('Y-m-d\TH:i:s.uP',
+                    $video['channel']['updated_at'])->format('Y-m-d\TH:i:sP');
             }
             return $this->serializer->deserialize(json_encode($response), VideoList::class, 'json');
         }

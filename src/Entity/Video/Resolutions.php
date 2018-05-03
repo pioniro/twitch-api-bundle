@@ -54,7 +54,7 @@ class Resolutions
     /**
      * @return string
      */
-    public function getChunked(): string
+    public function getChunked()
     {
         return $this->chunked;
     }
@@ -63,7 +63,7 @@ class Resolutions
      * @param string $chunked
      * @return Resolutions
      */
-    public function setChunked(string $chunked): Resolutions
+    public function setChunked($chunked)
     {
         $this->chunked = $chunked;
         return $this;
@@ -72,7 +72,7 @@ class Resolutions
     /**
      * @return string
      */
-    public function getHigh(): string
+    public function getHigh()
     {
         return $this->high;
     }
@@ -81,7 +81,7 @@ class Resolutions
      * @param string $high
      * @return Resolutions
      */
-    public function setHigh(string $high): Resolutions
+    public function setHigh($high)
     {
         $this->high = $high;
         return $this;
@@ -90,7 +90,7 @@ class Resolutions
     /**
      * @return string
      */
-    public function getLow(): string
+    public function getLow()
     {
         return $this->low;
     }
@@ -99,7 +99,7 @@ class Resolutions
      * @param string $low
      * @return Resolutions
      */
-    public function setLow(string $low): Resolutions
+    public function setLow($low)
     {
         $this->low = $low;
         return $this;
@@ -108,7 +108,7 @@ class Resolutions
     /**
      * @return string
      */
-    public function getMedium(): string
+    public function getMedium()
     {
         return $this->medium;
     }
@@ -117,7 +117,7 @@ class Resolutions
      * @param string $medium
      * @return Resolutions
      */
-    public function setMedium(string $medium): Resolutions
+    public function setMedium($medium)
     {
         $this->medium = $medium;
         return $this;
@@ -126,7 +126,7 @@ class Resolutions
     /**
      * @return string
      */
-    public function getMobile(): string
+    public function getMobile()
     {
         return $this->mobile;
     }
@@ -135,7 +135,7 @@ class Resolutions
      * @param string $mobile
      * @return Resolutions
      */
-    public function setMobile(string $mobile): Resolutions
+    public function setMobile($mobile)
     {
         $this->mobile = $mobile;
         return $this;

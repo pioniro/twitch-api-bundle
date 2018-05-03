@@ -31,7 +31,7 @@ class Thumbnail
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType()
     {
         return $this->type;
     }
@@ -40,7 +40,7 @@ class Thumbnail
      * @param string $type
      * @return Thumbnail
      */
-    public function setType(string $type): Thumbnail
+    public function setType($type)
     {
         $this->type = $type;
         return $this;
@@ -49,7 +49,7 @@ class Thumbnail
     /**
      * @return string
      */
-    public function getUrl(): string
+    public function getUrl()
     {
         return $this->url;
     }
@@ -58,7 +58,7 @@ class Thumbnail
      * @param string $url
      * @return Thumbnail
      */
-    public function setUrl(string $url): Thumbnail
+    public function setUrl($url)
     {
         $this->url = $url;
         return $this;

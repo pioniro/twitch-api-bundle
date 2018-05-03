@@ -48,7 +48,7 @@ class Thumbnails
     /**
      * @return Thumbnail[]
      */
-    public function getLarge(): array
+    public function getLarge()
     {
         return $this->large;
     }
@@ -57,7 +57,7 @@ class Thumbnails
      * @param Thumbnail[] $large
      * @return Thumbnails
      */
-    public function setLarge(array $large): Thumbnails
+    public function setLarge($large)
     {
         $this->large = $large;
         return $this;
@@ -66,7 +66,7 @@ class Thumbnails
     /**
      * @return Thumbnail[]
      */
-    public function getMedium(): array
+    public function getMedium()
     {
         return $this->medium;
     }
@@ -75,7 +75,7 @@ class Thumbnails
      * @param Thumbnail[] $medium
      * @return Thumbnails
      */
-    public function setMedium(array $medium): Thumbnails
+    public function setMedium($medium)
     {
         $this->medium = $medium;
         return $this;
@@ -84,7 +84,7 @@ class Thumbnails
     /**
      * @return Thumbnail[]
      */
-    public function getSmall(): array
+    public function getSmall()
     {
         return $this->small;
     }
@@ -93,7 +93,7 @@ class Thumbnails
      * @param Thumbnail[] $small
      * @return Thumbnails
      */
-    public function setSmall(array $small): Thumbnails
+    public function setSmall($small)
     {
         $this->small = $small;
         return $this;
@@ -102,7 +102,7 @@ class Thumbnails
     /**
      * @return Thumbnail[]
      */
-    public function getTemplate(): array
+    public function getTemplate()
     {
         return $this->template;
     }
@@ -111,7 +111,7 @@ class Thumbnails
      * @param Thumbnail[] $template
      * @return Thumbnails
      */
-    public function setTemplate(array $template): Thumbnails
+    public function setTemplate($template)
     {
         $this->template = $template;
         return $this;

@@ -48,7 +48,7 @@ class Fps
     /**
      * @return float
      */
-    public function getHigh(): float
+    public function getHigh()
     {
         return $this->high;
     }
@@ -57,7 +57,7 @@ class Fps
      * @param float $high
      * @return Fps
      */
-    public function setHigh(float $high): Fps
+    public function setHigh($high)
     {
         $this->high = $high;
         return $this;
@@ -66,7 +66,7 @@ class Fps
     /**
      * @return float
      */
-    public function getLow(): float
+    public function getLow()
     {
         return $this->low;
     }
@@ -75,7 +75,7 @@ class Fps
      * @param float $low
      * @return Fps
      */
-    public function setLow(float $low): Fps
+    public function setLow($low)
     {
         $this->low = $low;
         return $this;
@@ -84,7 +84,7 @@ class Fps
     /**
      * @return float
      */
-    public function getMedium(): float
+    public function getMedium()
     {
         return $this->medium;
     }
@@ -93,7 +93,7 @@ class Fps
      * @param float $medium
      * @return Fps
      */
-    public function setMedium(float $medium): Fps
+    public function setMedium($medium)
     {
         $this->medium = $medium;
         return $this;
@@ -102,7 +102,7 @@ class Fps
     /**
      * @return float
      */
-    public function getMobile(): float
+    public function getMobile()
     {
         return $this->mobile;
     }
@@ -111,7 +111,7 @@ class Fps
      * @param float $mobile
      * @return Fps
      */
-    public function setMobile(float $mobile): Fps
+    public function setMobile($mobile)
     {
         $this->mobile = $mobile;
         return $this;

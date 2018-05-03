@@ -163,7 +163,7 @@ class Channel
     /**
      * @return bool
      */
-    public function isMature(): bool
+    public function isMature()
     {
         return $this->mature;
     }
@@ -172,7 +172,7 @@ class Channel
      * @param bool $mature
      * @return Channel
      */
-    public function setMature(bool $mature): Channel
+    public function setMature($mature)
     {
         $this->mature = $mature;
         return $this;
@@ -181,7 +181,7 @@ class Channel
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->status;
     }
@@ -190,7 +190,7 @@ class Channel
      * @param string $status
      * @return Channel
      */
-    public function setStatus(string $status): Channel
+    public function setStatus($status)
     {
         $this->status = $status;
         return $this;
@@ -199,7 +199,7 @@ class Channel
     /**
      * @return string
      */
-    public function getBroadcasterLanguage(): string
+    public function getBroadcasterLanguage()
     {
         return $this->broadcasterLanguage;
     }
@@ -208,7 +208,7 @@ class Channel
      * @param string $broadcasterLanguage
      * @return Channel
      */
-    public function setBroadcasterLanguage(string $broadcasterLanguage): Channel
+    public function setBroadcasterLanguage($broadcasterLanguage)
     {
         $this->broadcasterLanguage = $broadcasterLanguage;
         return $this;
@@ -217,7 +217,7 @@ class Channel
     /**
      * @return string
      */
-    public function getDisplayName(): string
+    public function getDisplayName()
     {
         return $this->displayName;
     }
@@ -226,7 +226,7 @@ class Channel
      * @param string $displayName
      * @return Channel
      */
-    public function setDisplayName(string $displayName): Channel
+    public function setDisplayName($displayName)
     {
         $this->displayName = $displayName;
         return $this;
@@ -235,7 +235,7 @@ class Channel
     /**
      * @return string
      */
-    public function getGame(): string
+    public function getGame()
     {
         return $this->game;
     }
@@ -244,7 +244,7 @@ class Channel
      * @param string $game
      * @return Channel
      */
-    public function setGame(string $game): Channel
+    public function setGame($game)
     {
         $this->game = $game;
         return $this;
@@ -253,7 +253,7 @@ class Channel
     /**
      * @return string
      */
-    public function getLanguage(): string
+    public function getLanguage()
     {
         return $this->language;
     }
@@ -262,7 +262,7 @@ class Channel
      * @param string $language
      * @return Channel
      */
-    public function setLanguage(string $language): Channel
+    public function setLanguage($language)
     {
         $this->language = $language;
         return $this;
@@ -289,7 +289,7 @@ class Channel
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName()
     {
         return $this->name;
     }
@@ -298,7 +298,7 @@ class Channel
      * @param string $name
      * @return Channel
      */
-    public function setName(string $name): Channel
+    public function setName($name)
     {
         $this->name = $name;
         return $this;
@@ -307,7 +307,7 @@ class Channel
     /**
      * @return \DateTime
      */
-    public function getCreatedAt(): \DateTime
+    public function getCreatedAt()
     {
         return $this->createdAt;
     }
@@ -316,7 +316,7 @@ class Channel
      * @param \DateTime $createdAt
      * @return Channel
      */
-    public function setCreatedAt(\DateTime $createdAt): Channel
+    public function setCreatedAt(\DateTime $createdAt)
     {
         $this->createdAt = $createdAt;
         return $this;
@@ -325,7 +325,7 @@ class Channel
     /**
      * @return \DateTime
      */
-    public function getUpdatedAt(): \DateTime
+    public function getUpdatedAt()
     {
         return $this->updatedAt;
     }
@@ -334,7 +334,7 @@ class Channel
      * @param \DateTime $updatedAt
      * @return Channel
      */
-    public function setUpdatedAt(\DateTime $updatedAt): Channel
+    public function setUpdatedAt(\DateTime $updatedAt)
     {
         $this->updatedAt = $updatedAt;
         return $this;
@@ -343,7 +343,7 @@ class Channel
     /**
      * @return bool
      */
-    public function isPartner(): bool
+    public function isPartner()
     {
         return $this->partner;
     }
@@ -352,7 +352,7 @@ class Channel
      * @param bool $partner
      * @return Channel
      */
-    public function setPartner(bool $partner): Channel
+    public function setPartner($partner)
     {
         $this->partner = $partner;
         return $this;
@@ -361,7 +361,7 @@ class Channel
     /**
      * @return string
      */
-    public function getLogo(): string
+    public function getLogo()
     {
         return $this->logo;
     }
@@ -370,7 +370,7 @@ class Channel
      * @param string $logo
      * @return Channel
      */
-    public function setLogo(string $logo): Channel
+    public function setLogo($logo)
     {
         $this->logo = $logo;
         return $this;
@@ -379,7 +379,7 @@ class Channel
     /**
      * @return null|string
      */
-    public function getVideoBanner(): ?string
+    public function getVideoBanner()
     {
         return $this->videoBanner;
     }
@@ -388,7 +388,7 @@ class Channel
      * @param null|string $videoBanner
      * @return Channel
      */
-    public function setVideoBanner(?string $videoBanner): Channel
+    public function setVideoBanner($videoBanner)
     {
         $this->videoBanner = $videoBanner;
         return $this;
@@ -397,7 +397,7 @@ class Channel
     /**
      * @return null|string
      */
-    public function getProfileBanner(): ?string
+    public function getProfileBanner()
     {
         return $this->profileBanner;
     }
@@ -406,7 +406,7 @@ class Channel
      * @param null|string $profileBanner
      * @return Channel
      */
-    public function setProfileBanner(?string $profileBanner): Channel
+    public function setProfileBanner($profileBanner)
     {
         $this->profileBanner = $profileBanner;
         return $this;
@@ -415,7 +415,7 @@ class Channel
     /**
      * @return string
      */
-    public function getProfileBannerBackgroundColor(): string
+    public function getProfileBannerBackgroundColor()
     {
         return $this->profileBannerBackgroundColor;
     }
@@ -424,7 +424,7 @@ class Channel
      * @param string $profileBannerBackgroundColor
      * @return Channel
      */
-    public function setProfileBannerBackgroundColor(string $profileBannerBackgroundColor): Channel
+    public function setProfileBannerBackgroundColor($profileBannerBackgroundColor)
     {
         $this->profileBannerBackgroundColor = $profileBannerBackgroundColor;
         return $this;
@@ -433,7 +433,7 @@ class Channel
     /**
      * @return int
      */
-    public function getViews(): int
+    public function getViews()
     {
         return $this->views;
     }
@@ -442,7 +442,7 @@ class Channel
      * @param int $views
      * @return Channel
      */
-    public function setViews(int $views): Channel
+    public function setViews($views)
     {
         $this->views = $views;
         return $this;
@@ -451,7 +451,7 @@ class Channel
     /**
      * @return int
      */
-    public function getFollowers(): int
+    public function getFollowers()
     {
         return $this->followers;
     }
@@ -460,7 +460,7 @@ class Channel
      * @param int $followers
      * @return Channel
      */
-    public function setFollowers(int $followers): Channel
+    public function setFollowers($followers)
     {
         $this->followers = $followers;
         return $this;
@@ -469,7 +469,7 @@ class Channel
     /**
      * @return string
      */
-    public function getBroadcasterType(): string
+    public function getBroadcasterType()
     {
         return $this->broadcasterType;
     }
@@ -478,7 +478,7 @@ class Channel
      * @param string $broadcasterType
      * @return Channel
      */
-    public function setBroadcasterType(string $broadcasterType): Channel
+    public function setBroadcasterType($broadcasterType)
     {
         $this->broadcasterType = $broadcasterType;
         return $this;
@@ -487,7 +487,7 @@ class Channel
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription()
     {
         return $this->description;
     }
@@ -496,7 +496,7 @@ class Channel
      * @param string $description
      * @return Channel
      */
-    public function setDescription(string $description): Channel
+    public function setDescription($description)
     {
         $this->description = $description;
         return $this;
@@ -505,7 +505,7 @@ class Channel
     /**
      * @return null|string
      */
-    public function getEmail(): ?string
+    public function getEmail()
     {
         return $this->email;
     }
@@ -514,7 +514,7 @@ class Channel
      * @param null|string $email
      * @return Channel
      */
-    public function setEmail(?string $email): Channel
+    public function setEmail($email)
     {
         $this->email = $email;
         return $this;
@@ -523,7 +523,7 @@ class Channel
     /**
      * @return string
      */
-    public function getUrl(): string
+    public function getUrl()
     {
         return $this->url;
     }
@@ -532,7 +532,7 @@ class Channel
      * @param string $url
      * @return Channel
      */
-    public function setUrl(string $url): Channel
+    public function setUrl($url)
     {
         $this->url = $url;
         return $this;

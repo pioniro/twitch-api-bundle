@@ -24,32 +24,36 @@ class VideoList
     /**
      * @return int
      */
-    public function getTotal(): int
+    public function getTotal()
     {
         return $this->total;
     }
 
     /**
      * @param int $total
+     * @return VideoList
      */
-    public function setTotal(int $total): void
+    public function setTotal($total)
     {
         $this->total = $total;
+        return $this;
     }
 
     /**
      * @return Video[]
      */
-    public function getVideos(): array
+    public function getVideos()
     {
         return $this->videos;
     }
 
     /**
      * @param Video[] $videos
+     * @return VideoList
      */
-    public function setVideos(array $videos): void
+    public function setVideos($videos)
     {
         $this->videos = $videos;
+        return $this;
     }
 }

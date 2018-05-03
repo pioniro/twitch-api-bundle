@@ -32,7 +32,7 @@ class MutedSegment
     /**
      * @return int
      */
-    public function getDuration(): int
+    public function getDuration()
     {
         return $this->duration;
     }
@@ -41,7 +41,7 @@ class MutedSegment
      * @param int $duration
      * @return MutedSegment
      */
-    public function setDuration(int $duration): MutedSegment
+    public function setDuration($duration)
     {
         $this->duration = $duration;
         return $this;
@@ -50,7 +50,7 @@ class MutedSegment
     /**
      * @return int
      */
-    public function getOffset(): int
+    public function getOffset()
     {
         return $this->offset;
     }
@@ -59,7 +59,7 @@ class MutedSegment
      * @param int $offset
      * @return MutedSegment
      */
-    public function setOffset(int $offset): MutedSegment
+    public function setOffset($offset)
     {
         $this->offset = $offset;
         return $this;

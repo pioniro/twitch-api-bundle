@@ -169,7 +169,7 @@ class Video
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
@@ -178,7 +178,7 @@ class Video
      * @param string $id
      * @return Video
      */
-    public function setId(string $id): Video
+    public function setId($id)
     {
         $this->id = $id;
         return $this;
@@ -187,7 +187,7 @@ class Video
     /**
      * @return int
      */
-    public function getBroadcastId(): int
+    public function getBroadcastId()
     {
         return $this->broadcastId;
     }
@@ -196,7 +196,7 @@ class Video
      * @param int $broadcastId
      * @return Video
      */
-    public function setBroadcastId(int $broadcastId): Video
+    public function setBroadcastId($broadcastId)
     {
         $this->broadcastId = $broadcastId;
         return $this;
@@ -223,7 +223,7 @@ class Video
     /**
      * @return Channel
      */
-    public function getChannel(): Channel
+    public function getChannel()
     {
         return $this->channel;
     }
@@ -232,7 +232,7 @@ class Video
      * @param Channel $channel
      * @return Video
      */
-    public function setChannel(Channel $channel): Video
+    public function setChannel($channel)
     {
         $this->channel = $channel;
         return $this;
@@ -241,7 +241,7 @@ class Video
     /**
      * @return \DateTime
      */
-    public function getCreatedAt(): \DateTime
+    public function getCreatedAt()
     {
         return $this->createdAt;
     }
@@ -250,7 +250,7 @@ class Video
      * @param \DateTime $createdAt
      * @return Video
      */
-    public function setCreatedAt(\DateTime $createdAt): Video
+    public function setCreatedAt($createdAt)
     {
         $this->createdAt = $createdAt;
         return $this;
@@ -259,7 +259,7 @@ class Video
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription()
     {
         return $this->description;
     }
@@ -268,7 +268,7 @@ class Video
      * @param string $description
      * @return Video
      */
-    public function setDescription(string $description): Video
+    public function setDescription($description)
     {
         $this->description = $description;
         return $this;
@@ -277,7 +277,7 @@ class Video
     /**
      * @return string
      */
-    public function getDescriptionHtml(): string
+    public function getDescriptionHtml()
     {
         return $this->descriptionHtml;
     }
@@ -286,7 +286,7 @@ class Video
      * @param string $descriptionHtml
      * @return Video
      */
-    public function setDescriptionHtml(string $descriptionHtml): Video
+    public function setDescriptionHtml($descriptionHtml)
     {
         $this->descriptionHtml = $descriptionHtml;
         return $this;
@@ -295,7 +295,7 @@ class Video
     /**
      * @return Video\Fps
      */
-    public function getFps(): Video\Fps
+    public function getFps()
     {
         return $this->fps;
     }
@@ -304,7 +304,7 @@ class Video
      * @param Video\Fps $fps
      * @return Video
      */
-    public function setFps(Video\Fps $fps): Video
+    public function setFps($fps)
     {
         $this->fps = $fps;
         return $this;
@@ -313,7 +313,7 @@ class Video
     /**
      * @return string
      */
-    public function getGame(): string
+    public function getGame()
     {
         return $this->game;
     }
@@ -322,7 +322,7 @@ class Video
      * @param string $game
      * @return Video
      */
-    public function setGame(string $game): Video
+    public function setGame($game)
     {
         $this->game = $game;
         return $this;
@@ -331,7 +331,7 @@ class Video
     /**
      * @return string
      */
-    public function getLanguage(): string
+    public function getLanguage()
     {
         return $this->language;
     }
@@ -340,7 +340,7 @@ class Video
      * @param string $language
      * @return Video
      */
-    public function setLanguage(string $language): Video
+    public function setLanguage($language)
     {
         $this->language = $language;
         return $this;
@@ -349,7 +349,7 @@ class Video
     /**
      * @return int
      */
-    public function getLength(): int
+    public function getLength()
     {
         return $this->length;
     }
@@ -358,7 +358,7 @@ class Video
      * @param int $length
      * @return Video
      */
-    public function setLength(int $length): Video
+    public function setLength($length)
     {
         $this->length = $length;
         return $this;
@@ -367,7 +367,7 @@ class Video
     /**
      * @return Video\MutedSegment[]
      */
-    public function getMutedSegments(): array
+    public function getMutedSegments()
     {
         return $this->mutedSegments;
     }
@@ -376,7 +376,7 @@ class Video
      * @param Video\MutedSegment[] $mutedSegments
      * @return Video
      */
-    public function setMutedSegments(array $mutedSegments): Video
+    public function setMutedSegments($mutedSegments)
     {
         $this->mutedSegments = $mutedSegments;
         return $this;
@@ -385,7 +385,7 @@ class Video
     /**
      * @return Video\Previews
      */
-    public function getPreview(): Video\Previews
+    public function getPreview()
     {
         return $this->preview;
     }
@@ -394,7 +394,7 @@ class Video
      * @param Video\Previews $preview
      * @return Video
      */
-    public function setPreview(Video\Previews $preview): Video
+    public function setPreview($preview)
     {
         $this->preview = $preview;
         return $this;
@@ -403,7 +403,7 @@ class Video
     /**
      * @return \DateTime
      */
-    public function getPublishedAt(): \DateTime
+    public function getPublishedAt()
     {
         return $this->publishedAt;
     }
@@ -412,7 +412,7 @@ class Video
      * @param \DateTime $publishedAt
      * @return Video
      */
-    public function setPublishedAt(\DateTime $publishedAt): Video
+    public function setPublishedAt($publishedAt)
     {
         $this->publishedAt = $publishedAt;
         return $this;
@@ -421,7 +421,7 @@ class Video
     /**
      * @return Video\Resolutions
      */
-    public function getResolutions(): Video\Resolutions
+    public function getResolutions()
     {
         return $this->resolutions;
     }
@@ -430,7 +430,7 @@ class Video
      * @param Video\Resolutions $resolutions
      * @return Video
      */
-    public function setResolutions(Video\Resolutions $resolutions): Video
+    public function setResolutions($resolutions)
     {
         $this->resolutions = $resolutions;
         return $this;
@@ -439,7 +439,7 @@ class Video
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->status;
     }
@@ -448,7 +448,7 @@ class Video
      * @param string $status
      * @return Video
      */
-    public function setStatus(string $status): Video
+    public function setStatus($status)
     {
         $this->status = $status;
         return $this;
@@ -457,7 +457,7 @@ class Video
     /**
      * @return string
      */
-    public function getTagList(): string
+    public function getTagList()
     {
         return $this->tagList;
     }
@@ -466,7 +466,7 @@ class Video
      * @param string $tagList
      * @return Video
      */
-    public function setTagList(string $tagList): Video
+    public function setTagList($tagList)
     {
         $this->tagList = $tagList;
         return $this;
@@ -475,7 +475,7 @@ class Video
     /**
      * @return Video\Thumbnails
      */
-    public function getThumbnails(): Video\Thumbnails
+    public function getThumbnails()
     {
         return $this->thumbnails;
     }
@@ -484,7 +484,7 @@ class Video
      * @param Video\Thumbnails $thumbnails
      * @return Video
      */
-    public function setThumbnails(Video\Thumbnails $thumbnails): Video
+    public function setThumbnails($thumbnails)
     {
         $this->thumbnails = $thumbnails;
         return $this;
@@ -493,7 +493,7 @@ class Video
     /**
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }
@@ -502,7 +502,7 @@ class Video
      * @param string $title
      * @return Video
      */
-    public function setTitle(string $title): Video
+    public function setTitle($title)
     {
         $this->title = $title;
         return $this;
@@ -511,7 +511,7 @@ class Video
     /**
      * @return string
      */
-    public function getUrl(): string
+    public function getUrl()
     {
         return $this->url;
     }
@@ -520,7 +520,7 @@ class Video
      * @param string $url
      * @return Video
      */
-    public function setUrl(string $url): Video
+    public function setUrl($url)
     {
         $this->url = $url;
         return $this;
@@ -529,7 +529,7 @@ class Video
     /**
      * @return string
      */
-    public function getViewable(): string
+    public function getViewable()
     {
         return $this->viewable;
     }
@@ -538,7 +538,7 @@ class Video
      * @param string $viewable
      * @return Video
      */
-    public function setViewable(string $viewable): Video
+    public function setViewable($viewable)
     {
         $this->viewable = $viewable;
         return $this;
@@ -547,7 +547,7 @@ class Video
     /**
      * @return \DateTime|null
      */
-    public function getViewableAt(): ?\DateTime
+    public function getViewableAt()
     {
         return $this->viewableAt;
     }
@@ -556,7 +556,7 @@ class Video
      * @param \DateTime|null $viewableAt
      * @return Video
      */
-    public function setViewableAt(?\DateTime $viewableAt): Video
+    public function setViewableAt($viewableAt)
     {
         $this->viewableAt = $viewableAt;
         return $this;
@@ -565,7 +565,7 @@ class Video
     /**
      * @return int
      */
-    public function getViews(): int
+    public function getViews()
     {
         return $this->views;
     }
@@ -574,7 +574,7 @@ class Video
      * @param int $views
      * @return Video
      */
-    public function setViews(int $views): Video
+    public function setViews($views)
     {
         $this->views = $views;
         return $this;

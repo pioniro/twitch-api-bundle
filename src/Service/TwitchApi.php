@@ -73,14 +73,21 @@ class TwitchApi extends \TwitchApi\TwitchApi
         if(is_array($response)) {
             // todo! fix this hack. fucking twitch api!
             foreach($response['videos'] as &$video) {
-                $video['channel']['created_at'] = \DateTime::createFromFormat('Y-m-d\TH:i:s.uP',
-                    $video['channel']['created_at'])->format('Y-m-d\TH:i:sP');
-                $video['channel']['updated_at'] = \DateTime::createFromFormat('Y-m-d\TH:i:s.uP',
-                    $video['channel']['updated_at'])->format('Y-m-d\TH:i:sP');
+                $this->normalizeDateFields($video);
+                $this->normalizeDateFields($video['channel']);
             }
             return $this->serializer->deserialize(json_encode($response), VideoList::class, 'json');
         }
         return null;
 
+    }
+
+    public function normalizeDateFields(&$data)
+    {
+        foreach(['published_at', 'created_at', 'recorded_at', 'updated_at'] as $field) {
+            if(isset($data[$field]) && preg_match('/(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})\.\d+Z/', $data[$field], $match)) {
+                $data[$field] = $match[1] . 'Z';
+            }
+        }
     }
 }
